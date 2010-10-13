@@ -35,6 +35,7 @@ public class ExecutePhaseCommand implements Command {
         phasesAndProperties.add("test");
         phasesAndProperties.add("package");
         phasesAndProperties.add("integration-test");
+        phasesAndProperties.add("verify");
         phasesAndProperties.add("install");
         phasesAndProperties.add("deploy");
         phasesAndProperties.add("site");

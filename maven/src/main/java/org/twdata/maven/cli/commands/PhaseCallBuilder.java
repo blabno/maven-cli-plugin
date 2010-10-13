@@ -1,7 +1,6 @@
 package org.twdata.maven.cli.commands;
 
 import java.util.*;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.apache.maven.project.MavenProject;
 import org.codehaus.plexus.util.StringUtils;
@@ -122,8 +121,11 @@ public class PhaseCallBuilder {
             phases.add(currentPhaseCall);
         }
 
-        profile = profile.substring(2);
-        currentPhaseCall.addProfile(profile);
+        StringTokenizer tokenizer = new StringTokenizer(profile.substring(2),",");
+        while(tokenizer.hasMoreTokens()) {
+            String s = tokenizer.nextToken();
+            currentPhaseCall.addProfile(s);
+        }
     }
 
     private void addProperty(List<PhaseCall> phases, PhaseCall currentPhaseCall, String property) {
