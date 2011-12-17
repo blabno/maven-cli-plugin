@@ -184,7 +184,7 @@ Copyright [2009] [Don Brown, Matthew McCullough]
     <distributionManagement>
         <repository>
             <id>it-crowd.com.pl</id>
-            <url>svn:https://artifactory.it-crowd.com.pl/libs-release-local</url>
+            <url>http://artifactory.it-crowd.com.pl/libs-release-local</url>
         </repository>
     </distributionManagement>
 
