@@ -183,20 +183,13 @@ Copyright [2009] [Don Brown, Matthew McCullough]
     </pluginRepositories>
     <distributionManagement>
         <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>twdata-m2-repository</id>
-            <url>svn:https://twdata-m2-repository.googlecode.com/svn</url>
-            <!--
-            <id>repository.jboss.org</id>
-            <url>file:///${user.home}/mirror/checkout/jboss-maven2-repo</url>
-            -->
+            <id>it-crowd.com.pl</id>
+            <url>svn:https://artifactory.it-crowd.com.pl/libs-release-local</url>
         </repository>
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:git://github.com/mrdon/maven-cli-plugin.git</connection>
-        <developerConnection>scm:git:git://github.com/mrdon/maven-cli-plugin.git</developerConnection>
-        <url>scm:git:git://github.com/mrdon/maven-cli-plugin.git</url>
+	<developerConnection>scm:git:https://blabno@github.com/blabno/maven-cli-plugin.git</developerConnection>
     </scm>
 
     <properties>
